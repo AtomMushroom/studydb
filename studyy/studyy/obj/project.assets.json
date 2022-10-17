@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cherao\\Desktop\\study\\studyy\\studyy\\studyy.csproj",
+      "projectUniqueName": "C:\\Users\\cherao\\Desktop\\study\\studydb\\studyy\\studyy\\studyy.csproj",
       "projectName": "studyy",
-      "projectPath": "C:\\Users\\cherao\\Desktop\\study\\studyy\\studyy\\studyy.csproj",
+      "projectPath": "C:\\Users\\cherao\\Desktop\\study\\studydb\\studyy\\studyy\\studyy.csproj",
       "packagesPath": "C:\\Users\\cherao\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cherao\\Desktop\\study\\studyy\\studyy\\obj\\",
+      "outputPath": "C:\\Users\\cherao\\Desktop\\study\\studydb\\studyy\\studyy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
