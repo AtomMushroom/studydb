@@ -21,15 +21,8 @@ namespace studyy
         private void Form1_Load(object sender, EventArgs e)
         {
             con = new System.Data.SqlClient.SqlConnection();
-            con.ConnectionString = @"Data Source=.\db;
-                          AttachDbFilename=db\studydb.mdf;
-                          Integrated Security=True;
-                          Connect Timeout=30;
-                          User Instance=True";
+            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\cherao\Desktop\studydb\studyy\studyy\bin\Debug\netcoreapp3.1\db\studydb.mdf;Integrated Security=True;Connect Timeout=30";
             con.Open();
-            MessageBox.Show("Connection opened");
-            con.Close();
-            MessageBox.Show("Connection closed");
         }
 
             private void textBox1_TextChanged(object sender, EventArgs e)

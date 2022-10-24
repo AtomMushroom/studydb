@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zco4Xd9qHePKSW/JneXgQ921eyoMy8DIT23xEInYtzCO6ZB2i6kv6sM2xOF3PQreExdmVWC5XAHOd1JwWJ59lQ==",
+  "dgSpecHash": "2OI8CCBEP09QECjjsDAnXdQNsxhiidSWai/EhR8AM6YHeSHo6yGdDPs5KkBDIXwN/jY5Jm0VRhG3StzfgOCTXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cherao\\Desktop\\studydb\\studyy\\studyy\\studyy.csproj",
+  "projectFilePath": "C:\\Users\\cherao\\Desktop\\yio\\studydb\\studyy\\studyy\\studyy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cherao\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\cherao\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
@@ -12,7 +12,8 @@
     "C:\\Users\\cherao\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\cherao\\.nuget\\packages\\system.data.sqlclient\\4.8.4\\system.data.sqlclient.4.8.4.nupkg.sha512",
     "C:\\Users\\cherao\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
-    "C:\\Users\\cherao\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+    "C:\\Users\\cherao\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\cherao\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
 }
