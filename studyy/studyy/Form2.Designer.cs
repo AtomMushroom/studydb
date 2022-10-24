@@ -29,41 +29,42 @@ namespace studyy
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.studentName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.zapros = new System.Windows.Forms.Button();
+            this.tableLayout.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // tableLayout
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 370F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox6, 4, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(65, 188);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.75F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1053, 400);
-            this.tableLayoutPanel1.TabIndex = 5;
+            this.tableLayout.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.tableLayout.ColumnCount = 6;
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 370F));
+            this.tableLayout.Controls.Add(this.textBox5, 3, 0);
+            this.tableLayout.Controls.Add(this.textBox4, 2, 0);
+            this.tableLayout.Controls.Add(this.textBox3, 1, 0);
+            this.tableLayout.Controls.Add(this.textBox2, 0, 0);
+            this.tableLayout.Controls.Add(this.textBox6, 4, 0);
+            this.tableLayout.Location = new System.Drawing.Point(65, 188);
+            this.tableLayout.Name = "tableLayout";
+            this.tableLayout.RowCount = 2;
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.25F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81.75F));
+            this.tableLayout.Size = new System.Drawing.Size(1053, 400);
+            this.tableLayout.TabIndex = 5;
             // 
             // textBox5
             // 
@@ -140,13 +141,13 @@ namespace studyy
             this.textBox8.Text = "Ввод:";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // studentName
             // 
-            this.textBox9.Location = new System.Drawing.Point(389, 108);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(179, 35);
-            this.textBox9.TabIndex = 9;
+            this.studentName.Location = new System.Drawing.Point(389, 108);
+            this.studentName.Multiline = true;
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(218, 35);
+            this.studentName.TabIndex = 9;
             // 
             // label1
             // 
@@ -173,20 +174,33 @@ namespace studyy
             this.label2.Text = "Введите имя студента:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // zapros
+            // 
+            this.zapros.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.zapros.ForeColor = System.Drawing.Color.Black;
+            this.zapros.Location = new System.Drawing.Point(634, 108);
+            this.zapros.Name = "zapros";
+            this.zapros.Size = new System.Drawing.Size(218, 35);
+            this.zapros.TabIndex = 12;
+            this.zapros.Text = "Запросить";
+            this.zapros.UseVisualStyleBackColor = false;
+            this.zapros.Click += new System.EventHandler(this.zapros_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 600);
+            this.Controls.Add(this.zapros);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.studentName);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayout);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayout.ResumeLayout(false);
+            this.tableLayout.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,15 +208,16 @@ namespace studyy
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayout;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox studentName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button zapros;
     }
 }

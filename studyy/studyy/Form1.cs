@@ -15,7 +15,6 @@ namespace studyy
         public Form1()
         {
             InitializeComponent();
-            System.Data.SqlClient.SqlConnection con;
         }
         System.Data.SqlClient.SqlConnection con;
         private void Form1_Load(object sender, EventArgs e)
@@ -25,14 +24,14 @@ namespace studyy
             con.Open();
         }
 
-            private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 kurwa = new Form2();
+            Form2 kurwa = new Form2(con);
             kurwa.Show();
         }
 
