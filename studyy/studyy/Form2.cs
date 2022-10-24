@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -30,12 +31,30 @@ namespace studyy
 
         private void zapros_Click(object sender, EventArgs e)
         {
+            Con.Open();
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = "select * from dbo.main";
             cmd.Connection = Con;
-            textBox2.Text = Convert.ToString(cmd.ExecuteNonQuery());
-            tableLayout.Cell
+            bindingSource1.DataSource = GetData(cmd);
+            dataGridView1.DataSource = bindingSource1;
+            Con.Close();
+
+        }
+
+        private static DataTable GetData(System.Data.SqlClient.SqlCommand sqlCommand)
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = sqlCommand;
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            adapter.Fill(table);
+
+            return table;
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
         }
     }
 }

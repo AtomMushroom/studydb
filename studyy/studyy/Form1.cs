@@ -21,7 +21,6 @@ namespace studyy
         {
             con = new System.Data.SqlClient.SqlConnection();
             con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\cherao\Desktop\studydb\studyy\studyy\bin\Debug\netcoreapp3.1\db\studydb.mdf;Integrated Security=True;Connect Timeout=30";
-            con.Open();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
