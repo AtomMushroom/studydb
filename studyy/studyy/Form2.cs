@@ -34,7 +34,7 @@ namespace studyy
             Con.Open();
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select * from dbo.main";
+            cmd.CommandText = "select student, subject, dbo.main.period, mark from dbo.main inner join dbo.student on (dbo.main.student = dbo.student.id) inner join dbo.subject on (dbo.main.subject = dbo.subject.id)";
             cmd.Connection = Con;
             bindingSource1.DataSource = GetData(cmd);
             dataGridView1.DataSource = bindingSource1;
