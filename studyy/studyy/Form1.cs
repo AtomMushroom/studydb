@@ -35,11 +35,6 @@ namespace studyy
             form2.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3(con);

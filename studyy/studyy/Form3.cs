@@ -28,7 +28,6 @@ namespace studyy
             cmd.CommandText = $"insert into student(FIO) VALUES (N'{textBoxFIO.Text}')";
             cmd.ExecuteNonQuery();
             cmd.CommandText = $@"insert into main(student,period,subject,mark) VALUES ((SELECT IDENT_CURRENT('student')), {textBoxPeriod.Text}, (select top 1 id from subject where subject.subj like '{comboBoxSubject.Text}%') , {textBoxMark.Text})";
-            MessageBox.Show(cmd.CommandText);
             cmd.ExecuteNonQuery();
             Con.Close();
         }
