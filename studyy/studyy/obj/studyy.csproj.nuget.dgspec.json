@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\studydb\\studyy\\studyy\\studyy.csproj": {}
+    "C:\\Users\\vasil\\Desktop\\studydb\\studyy\\studyy\\studyy.csproj": {}
   },
   "projects": {
-    "C:\\studydb\\studyy\\studyy\\studyy.csproj": {
+    "C:\\Users\\vasil\\Desktop\\studydb\\studyy\\studyy\\studyy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\studydb\\studyy\\studyy\\studyy.csproj",
+        "projectUniqueName": "C:\\Users\\vasil\\Desktop\\studydb\\studyy\\studyy\\studyy.csproj",
         "projectName": "studyy",
-        "projectPath": "C:\\studydb\\studyy\\studyy\\studyy.csproj",
-        "packagesPath": "C:\\Users\\cherao\\.nuget\\packages\\",
-        "outputPath": "C:\\studydb\\studyy\\studyy\\obj\\",
+        "projectPath": "C:\\Users\\vasil\\Desktop\\studydb\\studyy\\studyy\\studyy.csproj",
+        "packagesPath": "C:\\Users\\vasil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vasil\\Desktop\\studydb\\studyy\\studyy\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cherao\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vasil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -57,14 +51,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.21, 3.1.21]"
+              "version": "[3.1.30, 3.1.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -75,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

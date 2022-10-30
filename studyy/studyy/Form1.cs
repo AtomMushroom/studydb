@@ -20,7 +20,8 @@ namespace studyy
         private void Form1_Load(object sender, EventArgs e)
         {
             con = new System.Data.SqlClient.SqlConnection();
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\cherao\Desktop\studydb\studyy\studyy\bin\Debug\netcoreapp3.1\db\studydb.mdf;Integrated Security=True;Connect Timeout=30";
+            string dir = Environment.CurrentDirectory;
+            con.ConnectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={dir}\db\studydb.mdf;Integrated Security=True;Connect Timeout=30";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -30,13 +31,19 @@ namespace studyy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 kurwa = new Form2(con);
-            kurwa.Show();
+            Form2 form2 = new Form2(con);
+            form2.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3(con);
+            form3.Show();
         }
     }
 }

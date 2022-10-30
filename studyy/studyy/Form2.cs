@@ -34,7 +34,13 @@ namespace studyy
             Con.Open();
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "select student, subject, dbo.main.period, mark from dbo.main inner join dbo.student on (dbo.main.student = dbo.student.id) inner join dbo.subject on (dbo.main.subject = dbo.subject.id)";
+            if (studentName.Text == "")
+            {
+                cmd.CommandText = @"select id, (select FIO from student where student.id=main.student) as Students, (select subj from subject where subject.id=main.subject) as ""Предмет"", period as ""Семестр"", mark as ""Оценка"" from main";
+            } else if (studentName.Text != "")
+            {
+                cmd.CommandText = $@"select  id, Students, Subject, Period, Mark from (select id, (select FIO from student where student.id=main.student) as Students, (select subj from subject where subject.id=main.subject) as Subject, period as Period, mark as Mark from main) as Query where Students like '%{studentName.Text}%'";
+            }
             cmd.Connection = Con;
             bindingSource1.DataSource = GetData(cmd);
             dataGridView1.DataSource = bindingSource1;
@@ -55,6 +61,16 @@ namespace studyy
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void studentName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
         }
     }
 }
